@@ -8,5 +8,5 @@ class Car(Serviceable, ABC):
 
 
     def needs_service(self):
-        return self.engine.needs_service() and self.battery.needs_service()
+        return self.engine.engine_should_be_serviced() or self.battery.needs_service()
 

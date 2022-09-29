@@ -7,5 +7,5 @@ class Engine(ABC):
         pass
 
     @abstractmethod
-    def needs_service(self):
+    def engine_should_be_serviced(self):
         pass
